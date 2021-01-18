@@ -9,11 +9,13 @@
 </tr>
 </thead>
 
-<tbody>
-<tr>
-<td>some title</td>
-<td>some description</td>
-<td>placeholder</td>
-</tr>
-</tbody>
-</table>
+    <tbody>
+        <% @articles.each do |article|%>
+        <tr>
+        <td><%= article.title %></td>
+        <td><%= article.description %></td>
+        <td>placeholder</td>
+        </tr>
+        <% end %>
+    </tbody>
+    </table>
