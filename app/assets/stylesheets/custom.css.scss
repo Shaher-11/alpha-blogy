@@ -6,7 +6,9 @@
     background-color: black !important;
     
     }
-    
+#my-btn {
+    margin-top: 600px;
+}
     .navbar-brand {
     
     font-size: 3rem;
@@ -28,12 +30,42 @@
 }
 
 .jumbotron {
-    background-image: asset-url('background-image.jpg');
+    background-image: asset-url('background.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 760px;
 }
+
+html,
+body {
+    height: 100%;
+}
+#page-content {
+    flex: 1 0 auto;
+    background-color: whitesmoke;
+}
+#sticky-footer {
+    flex-shrink: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
