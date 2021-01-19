@@ -1,14 +1,8 @@
 <div class="container">
-  <% if @article.errors.any? %>
-  <h2>The folowing errors prevented the article from being saved</h2>
-  <ul>
-  <% @article.errors.full_messages.each do |msg| %>
-  <li><%= msg %></li>
-  <% end  %>
-  </ul>
-  <% end  %>
+  
   <div class="row justify-content-center">
   <div class="col-10">
+    <%= render 'shared/errors' %>
   <%= form_with(model: @article, class: "shadow p-3 mb-3 bg-success rounded", local: true) do |f| %>
 
   <div class="form-group row">
@@ -26,7 +20,7 @@
   </div>
 
     <div class="form-group row justify-content-center">
-  <%= f.submit class: "btn btn-outline-success btn-lg" %>
+  <%= f.submit class: "btn btn-outline-light btn-lg" %>
   </div>
 
   <% end %>
