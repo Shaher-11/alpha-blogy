@@ -3,15 +3,49 @@
 
 .navbar {
 
-    background-color: #5ad3da !important;
+    background-color: black !important;
     
     }
-    
-     
     
     .navbar-brand {
     
     font-size: 3rem;
     
     }
-    
+    .nav-link {
+        color: white !important;
+    }
+    #logo {
+     float: left;
+     font-size: 1.7em;
+     color: green;
+     text-transform: uppercase;
+     letter-spacing: -1px;
+     font-weight: bold;
+    }
+#home-container {
+    margin-top: 25px;
+}
+
+.jumbotron {
+    background-image: asset-url('background-image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 760px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
