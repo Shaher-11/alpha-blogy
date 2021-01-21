@@ -20,15 +20,12 @@
               <%= link_to "Create a new article", new_article_path, class: "dropdown-item" %>
             <% end %>
               <%= link_to "View article", articles_path, class: "dropdown-item" %>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
           </li>
          
           <% if logged_in? %>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle success" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <%= current_user.username %>
+             <%= "Adimn" if current_user.admin? %> <%= current_user.username %>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <%= link_to "View profile", user_path(current_user), class: "dropdown-item" %>

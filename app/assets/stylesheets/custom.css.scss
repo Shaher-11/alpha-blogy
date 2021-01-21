@@ -30,10 +30,8 @@
 
 .jumbotron {
     background-image: asset-url('background.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 760px;
+    background-size: cover;
+    height: 100%;
 }
 
 html,
@@ -91,7 +89,13 @@ body {
   
 
 
-  
+      @media (max-width: 480px) {
+        .jumbotron{
+          background-image: asset-url('background.jpg')no-repeat center center;
+
+          background-size: 100% 100%;
+        }
+    }
 
 
 
