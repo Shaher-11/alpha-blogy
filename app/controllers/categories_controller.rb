@@ -12,7 +12,7 @@ class CategoriesController < ApplicationController
      else
         render 'new'
      end
-     
+
     end
 
     def index
@@ -20,7 +20,7 @@ class CategoriesController < ApplicationController
     end
 
     def show
-
+     @category = Category.find(params[:id])
     end
    
     private 
