@@ -9,7 +9,7 @@
   <% if article.user %>
     by <%= link_to article.user.username, user_path(article.user)  %>
     <% end %>
-     <% if article.category.any? %>
+     <% if article.categories.any? %>
    <div class="mt-2"><%= render article.categories %></div> 
         <% end  %>
   </div>
