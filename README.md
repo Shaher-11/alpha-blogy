@@ -1,5 +1,5 @@
 
-![](https://img.shields.io/badge/alphablogy-green)
+![](https://img.shields.io/badge/alphablogy-blueviolet)
 
 # Alpha-Blogy
 
