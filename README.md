@@ -1,17 +1,9 @@
-# README
-
-
-#alphablogy
-
-* This application built with the help of rails guide to establish a solid foundation of rails, 
-* The app touches different areas as forms and models and association as well as validations and more.
-* The bloggy is a blog appliaction that allows users to log in and write articles and edit them as well as viewing other people's articles.
 
 ![](https://img.shields.io/badge/alphablogy-green)
 
 # Alpha-Blogy
 
-> One paragraph statement about the project.
+> The appliation allows users to log in and write articles and edit them as well as viewing other people's articles and more.
 
 ![screenshot](./app_screenshot.png)
 
