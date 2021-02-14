@@ -5,13 +5,11 @@
 
 > The appliation allows users to log in and write articles and edit them as well as viewing other people's articles and more.
 
-![screenshot](./app_screenshot.png)
-
 Additional description about the project and its features.
 
 ## Built With
 
-- Ruby on rals
+- Ruby on rails
 - bootstrap
 - postgresql
 
@@ -49,7 +47,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Rail guide
+- Rails guide
 - The odin project
 
 ## 📝 License
