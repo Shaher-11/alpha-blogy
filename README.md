@@ -1,14 +1,15 @@
 
-![](https://img.shields.io/badge/alphablogy-blueviolet)
+![](https://img.shields.io/badge/Alphablogy-blueviolet)
 
 # Alpha-Blogy
 
-> The appliation allows users to log in and write articles and edit them as well as viewing other people's articles and more.
+> The application allows users to log in and write articles and edit them as well as viewing other people's articles and more.
 
-Additional description about the project and its features.
+![screenshot](./app/assets/images/alpha.png)
 
 ## Built With
 
+- Ruby
 - Ruby on rails
 - bootstrap
 - postgresql
@@ -29,8 +30,6 @@ To get a local copy up and running, follow these simple example steps.
 
 ### Run rails s
 
-### Deployment use PostgreSQL
-
 
 ## Authors
 
@@ -47,7 +46,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Rails guide
-- The odin project
 
 ## 📝 License
 
