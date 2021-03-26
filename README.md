@@ -19,7 +19,7 @@ Additional description about the project and its features.
 
 
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow these simple example steps.
 
 ### ruby 3
 
@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author**
+👤 **Shaher**
 
 - GitHub: [@githubhandle](https://github.com/Shaher-11)
 - Twitter: [@twitterhandle](https://twitter.com/ShaherShamroukh/)
