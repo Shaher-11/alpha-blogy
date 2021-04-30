@@ -13,6 +13,7 @@
 - Ruby on rails
 - bootstrap
 - postgresql
+- Lots of love :heart:
 
 ## Live Demo
 
