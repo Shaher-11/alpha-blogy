@@ -10,7 +10,11 @@ class ArticlesController < ApplicationController
         end 
        
         def index
+          if params[:title]
+            @articles = Article.where('title ILIKE ?', "%#{params[:title]}%")
+          else
             @articles = Article.paginate(page: params[:page], per_page: 2)
+          end 
         end 
 
         def new

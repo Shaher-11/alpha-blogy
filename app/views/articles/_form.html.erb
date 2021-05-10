@@ -1,27 +1,27 @@
 <div class="container">
   
   <div class="row justify-content-center">
-  <div class="col-10">
+  <div class="col-12">
     <%= render 'shared/errors', obj: @article %>
   <%= form_with(model: @article, class: "shadow p-3 mb-3 bg-success rounded", local: true) do |f| %>
 
   <div class="form-group row">
     <%= f.label :title, class: "col-2 col-form-label text-light" %>
-    <div class="col-10">
+    <div class="col-12">
       <%= f.text_field :title, class: "form-control shadow rounded", placeholder: "Title" %>
   </div>
   </div>
 
   <div class="form-group row">
     <%= f.label :description, class: "col-2 col-form-label text-light" %> <br>
-      <div class="col-10">
-      <%= f.text_area :description, rows: 10, class: "form-control shadow rounded", placeholder: "Description" %>
+      <div class="col-12">
+      <%= f.rich_text_area :description, rows: 10, class: "form-control shadow rounded desy", placeholder: "Description" %>
   </div>
   </div>
 
   <div class="form-group row">
     <%= f.label :category, class: "col-2 col-form-label text-light" %>
-      <div class="col-10">
+      <div class="col-12">
     <%= f.collection_select(:category_ids, Category.all, :id, :name,
     { promt: "Make your selection from the list below (can be empty)"}, { multiple: true, class: "custom-select shadow rounded" }) %>
   </div>

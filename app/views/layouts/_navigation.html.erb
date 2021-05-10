@@ -62,12 +62,21 @@
 
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+  <%= form_tag(articles_path, method: :get) do %>
+    <div class="input-group">
+      <%= text_field_tag :title, params[:title], autocomplete: 'off', placeholder: "Search", class: 'form-control' %>
+      <span class="input-group-append">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <span aria-hidden="true" class="fas fa-search"></span> Search
+        </button>
+      </span>
+    </div>
+  <% end %>
+  </form>
+ </div>
+</nav>
 
+          
 
 
 
