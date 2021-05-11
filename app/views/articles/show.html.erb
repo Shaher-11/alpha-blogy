@@ -25,20 +25,21 @@
  Edited <%= time_ago_in_words(@article.updated_at) %>ago</smal>  
   </div>
 </div>
-<div class="container text-white bg-dark">
-<h2 class=" text-center font-weight-5 text-success">Your opinion matters, Comment bellow</h2>
+
+<div class="container">
 <% @article.comments.each do |comment| %>
   <p class="">
-    <%= comment.body %>
+    <strong class="h4"><%= comment.body %></strong>
+    <span class="text-secondary">Created <%= time_ago_in_words(comment.created_at) %></span>
   </p>
 <% end %>
 
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
   <p>
-    <%= form.text_area :body, class: "w-100" %>
+    <%= form.text_area :body, class: "w-100", placeholder: "Add a new comment" %>
   </p>
   <p class="text-center">
-    <%= form.submit class: "btn btn-outline-primary" %>
+    <%= form.submit class: "btn btn-success" %>
   </p>
 <% end %>
 </div>
