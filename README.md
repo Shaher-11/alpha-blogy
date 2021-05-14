@@ -23,17 +23,17 @@
 
 To get a local copy up and running, follow these simple example steps.
 
-### Install ruby 3
+- Install ruby 3.0
 
-###  Install ruby on rails 6
+- Install ruby on rails 6.1
 
-### Install yarn
+- Install yarn
 
-### run ``yarn``
+- run ``yarn``
 
-### Run ``rails s`` 
+- Run ``rails s`` 
 
-## open the link that shows on the terminal
+- open the link that shows on the terminal
 
 
 ## Author
