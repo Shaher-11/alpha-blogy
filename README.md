@@ -3,7 +3,7 @@
 
 # Alpha-Blogy
 
-> The application allows users to log in and write articles and edit them as well as commenting on other people's articles and more.
+> The application allows users to log in and write articles and edit them as well as commenting on other people's articles, liking them, and more.
 
 ![screenshot](./app/assets/images/alpha.png)
 
