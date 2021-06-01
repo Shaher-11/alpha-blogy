@@ -28,20 +28,23 @@
 
 <div class="container">
 <% @article.comments.each do |comment| %>
-  <p class="">
-    <strong class="h4"><%= comment.body %></strong>
-    <span class="text-secondary">Created <%= time_ago_in_words(comment.created_at) %></span>
-  </p>
+    <div class="commenty h6">
+    <b><%= comment.user.username %>:</b> <%= comment.body %>
 <% end %>
-
+</div>
+</div>
+<br>
+<br>
+<div class="container">
 <%= form_with model: [ @article, @article.comments.build ] do |form| %>
   <p>
-    <%= form.text_area :body, class: "w-100", placeholder: "Add a new comment" %>
+    <%= form.text_area :body, class: "w-100", placeholder: "Add a new comment"%>
   </p>
   <p class="text-center">
-    <%= form.submit class: "btn btn-success" %>
+    <%= form.submit class: "btn btn-success text-center" %>
   </p>
 <% end %>
+</div>
 </div>
 
 </div>
