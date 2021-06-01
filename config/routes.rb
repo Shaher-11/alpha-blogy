@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
   resources :articles do
-    resources :comments
+    resources :comments, only: [:create]
+    resources :likes, only: [:create, :destroy]
   end
   get 'signup', to: 'users#new'
   resources :users, except: [:new]
